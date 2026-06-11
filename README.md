@@ -7,7 +7,7 @@ Deploy to Production/Developer Edition Orgs :
 
 Deploy to Sandboxes Orgs :
 
-<a href="https://githubsfdeploy-sandbox.herokuapp.com?owner=findocklabs&repo=findock-usage-reports&ref=main">
+<a href="https://githubsfdeploy-sandbox.herokuapp.com?owner=findocklabs&repo=findock-healthcheck-fundraising&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
