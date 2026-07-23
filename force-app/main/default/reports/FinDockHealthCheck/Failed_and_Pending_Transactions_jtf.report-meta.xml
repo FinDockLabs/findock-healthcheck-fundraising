@@ -22,7 +22,6 @@
     <columns>
         <field>cpm__Transaction__c.cpm__Guided_Matching_Error__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Transactions in the following statuses - No Match, Pending, Processing,Failed</description>
     <filter>
         <criteriaItems>
