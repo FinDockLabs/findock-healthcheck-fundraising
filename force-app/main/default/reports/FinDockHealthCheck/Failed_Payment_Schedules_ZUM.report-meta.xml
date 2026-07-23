@@ -29,7 +29,6 @@
     <columns>
         <field>cpm__Payment_Schedule__c.cpm__Last_Status_Reason__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Open Payment Schedules - which are in Statuses not equal to Scheduled or Done</description>
     <filter>
         <criteriaItems>
