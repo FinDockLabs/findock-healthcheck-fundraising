@@ -12,7 +12,6 @@
     <columns>
         <field>cpm__Message__c.cpm__Payload__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Messages in Scheduled or Queued status</description>
     <filter>
         <criteriaItems>
