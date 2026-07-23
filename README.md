@@ -15,13 +15,13 @@ Deploy to Sandboxes Orgs :
 # FinDock Health Check Dashboards for Fundraising
 
 A quick description of what this repo contains:
-- Reports and a Dashboard to help monitor failed or Pending FinDock Processes that include Payment Schedules, Inbound Reports, Messages, Logs, Installments, Transaction Sets and Transactions
+- Reports and a Dashboard to help monitor failed or Pending FinDock Processes that include Payment Schedules, Mandate Schedules, Inbound Reports, Messages, Logs, Installments,Mandates, Transaction Sets and Transactions
 - A Report folder where all these Reports are placed
 - A Dashboard Folder where the Dashboard is placed
 - These reports and dashboards are built to work with FinDock used with the Non Profit Cloud Fundraising source
 
 # Configuration
-- This project creates 8 Reports and 1 Dashboard 
+- This project creates 10 Reports and 1 Dashboard 
 - The Dashboard has 3 default filters added for "All", "Last Week" and "Last Month" that filters all the Reports by the CreatedDate field. 
 - You can choose to add more filter options as required. 
 
@@ -37,6 +37,8 @@ reports/Failed_Payment_Schedules_ZUM.report-meta.xml
 reports/Orphan_Installments_2fT.report-meta.xml
 reports/Unprocessed_Installments_linked_to_PS_OjT.report-meta.xml
 reports/Unprocessed_Transaction_Sets_CSI.report-meta.xml
+reports/Failed_Mandates_XIJ.report-meta.xml
+reports/Unprocessed_Mandate_Schedules_sps.report-meta.xml
 
 **Report Folder**
 reports/FinDockHealthCheck.reportFolder-meta.xml
