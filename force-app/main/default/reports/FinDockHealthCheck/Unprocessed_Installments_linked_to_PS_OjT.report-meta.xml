@@ -15,7 +15,6 @@
     <columns>
         <field>cpm__Installment__c.cpm__Last_Status_Reason__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Installments which are linked to a Payment Schedule but are not in a Collected status</description>
     <filter>
         <criteriaItems>
