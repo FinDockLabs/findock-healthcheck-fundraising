@@ -47,7 +47,6 @@
             <operator>notEqual</operator>
             <value>Scheduled</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>Unprocessed Mandate Schedules</name>
