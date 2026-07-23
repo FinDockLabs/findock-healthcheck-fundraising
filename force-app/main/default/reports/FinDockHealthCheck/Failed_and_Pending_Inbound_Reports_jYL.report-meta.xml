@@ -15,7 +15,6 @@
     <columns>
         <field>cpm__Inbound_Report__c.cpm__Payment_Intent_Id__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Inbound Reports in Pending, Error, Failed or Processing statuses</description>
     <filter>
         <criteriaItems>
