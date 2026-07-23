@@ -22,7 +22,6 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>cpm__Transaction_Set__c.cpm__Total_Amount_Debit_from_file__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Unprocessed Transaction Sets in New, Processing or Failed status</description>
     <filter>
         <criteriaItems>
