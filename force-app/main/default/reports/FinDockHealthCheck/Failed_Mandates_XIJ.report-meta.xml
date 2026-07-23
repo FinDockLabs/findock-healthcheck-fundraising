@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate__c.cpm__Last_Status_Reason__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate__c.cpm__Date_Signed__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate__c.cpm__Payment_Processor__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate__c.cpm__Target__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate__c.cpm__Payment_Profile__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Mandates with a failed status to monitor and take action on</description>
+    <filter>
+        <criteriaItems>
+            <column>cpm__Mandate__c.cpm__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Failed</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Failed Mandates</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cpm__Mandate__c@cpm__Mandate__c.cpm__Mandate_Schedule__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cpm__Mandate__c.cpm__Date_Signed__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

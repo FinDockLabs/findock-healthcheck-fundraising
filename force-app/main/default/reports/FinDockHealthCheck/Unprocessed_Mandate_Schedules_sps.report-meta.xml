@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate_Schedule__c.cpm__Run_Date__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate_Schedule__c.cpm__Status__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate_Schedule__c.cpm__Last_Status_Reason__c</field>
+    </columns>
+    <columns>
+        <field>cpm__Mandate_Schedule__c.cpm__Target__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Mandate schedules which are unprocessed - in statuses other than Done or Scheduled. It also flags Mandate Schedules which have a run date of TODAY and in status Scheduled.</description>
+    <filter>
+        <booleanFilter>(1 AND 4) OR (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>cpm__Mandate_Schedule__c.cpm__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Done</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cpm__Mandate_Schedule__c.cpm__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Scheduled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cpm__Mandate_Schedule__c.cpm__Run_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cpm__Mandate_Schedule__c.cpm__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Scheduled</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Unprocessed Mandate Schedules</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cpm__Mandate_Schedule__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cpm__Mandate_Schedule__c.cpm__Processing_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
