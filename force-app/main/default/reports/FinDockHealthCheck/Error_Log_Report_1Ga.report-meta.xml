@@ -6,7 +6,6 @@
     <columns>
         <field>cpm__Log__c.cpm__Message__c</field>
     </columns>
-    <currency>EUR</currency>
     <description>Logs in an Error status</description>
     <filter>
         <criteriaItems>
